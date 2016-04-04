@@ -7,3 +7,11 @@ body {
 .body {
   background-image: url('../assets/manatee.jpg');
 }
+
+.manatee {
+  background-image: url('../assets/manatee2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+}
