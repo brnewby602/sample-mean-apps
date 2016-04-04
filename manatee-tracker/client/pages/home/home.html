@@ -13,10 +13,12 @@
       <form name='searchForm' ng-submit='searchMyManatee()'>
         <div class="form-group">
           <label for="usr">My favorite manatee:</label>
-          <input type="text" ng-model='manateeName' class="form-control" id="name">
+          <input type="text" ng-model='manateeName' class="form-control" id="name" name='manateeName' required>
           <button type="submit" class="btn btn-primary">Search</button>
         </div>
-        
+        <div class='message' ng-messages='searchForm.manateeName.$error'>
+          <div class='message' ng-message='required'>We may be smart, but we're not mind readers, what your favorite manatee's name again?</div>
+        </div>  
       </form>
     </div>
   </div>

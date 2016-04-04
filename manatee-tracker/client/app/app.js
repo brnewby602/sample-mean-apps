@@ -1,6 +1,7 @@
 var app = angular.module('manateeTrackerApp', [
   'manatee.home',
-  'ngRoute'
+  'ngRoute',
+  'ngMessages'
 ])
 .config(function($routeProvider) {
 
