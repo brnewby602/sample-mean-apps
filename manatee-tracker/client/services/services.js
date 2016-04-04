@@ -1,4 +1,4 @@
 angular.module('manatee-services', [] )
-.factory('Manatee' function($http) {
+.factory('ManateeServices' function($http) {
 
 });

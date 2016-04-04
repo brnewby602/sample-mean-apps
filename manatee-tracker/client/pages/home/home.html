@@ -7,11 +7,17 @@
 </div>
 <div class="container" ng-controller="ManateeController">
   <div class="row">
-    <div class="col-sm-6">
-       {{title}}
-    </div>
-    <div class="col-sm-6">
-       Put Map Here
+    <div class="col-sm-12">
+      {{title}}
+
+      <form name='searchForm' ng-submit='searchMyManatee()'>
+        <div class="form-group">
+          <label for="usr">My favorite manatee:</label>
+          <input type="text" ng-model='manateeName' class="form-control" id="name">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+        
+      </form>
     </div>
   </div>
 </div>

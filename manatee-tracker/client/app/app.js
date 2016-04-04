@@ -4,7 +4,6 @@ var app = angular.module('manateeTrackerApp', [
 ])
 .config(function($routeProvider) {
 
-
   $routeProvider
   .when('/', {
     templateUrl: 'pages/home/home.html',
@@ -13,10 +12,3 @@ var app = angular.module('manateeTrackerApp', [
   
 });
 
-/*
-app.controller('ManateeController', function($scope) {
-
-   console.log("INSIDE CONTROLLER");
-   $scope.title = 'I LOVE Manatees!!';
-});
-*/
