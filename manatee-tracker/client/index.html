@@ -1,14 +1,25 @@
 <!doctype html>
-<html lang="en" ng-app="manatee-tracker">
+<html lang="en" ng-app="manateeTrackerApp">
   <head>
     <meta charset="UTF-8">
+
+    <link href="./lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' type='text/css' href='./styles/main.css'/>
+
     <title>Manatee Tracker</title>
     
     <script src="./lib/angular/angular.min.js"></script>
+    <script src="./app/app.js"></script>
     
   </head>
-  <body >
+  <body class='body'>
+    <div class="jumbotron">
+        <div class="container">
+          <h1>I Love Manatees!</h1>
+          <p>For all the lover of manatees in the world, do you wish there was a way you could track your favorite manatee to see what they are up to? Would you like to be able to store an encounter with one so that you can see where they have been on a map? Than this site is for you.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+    </div>
     <div ng-controller="ManateeController">
        {{title}}
     </div>

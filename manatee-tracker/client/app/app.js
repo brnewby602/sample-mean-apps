@@ -1,4 +1,4 @@
-angular.module('manatee-tracker', [])
-.controller('ManateeController', function() {
-   this.title = 'I Love Manatees!!';
+angular.module('manateeTrackerApp', [])
+.controller('ManateeController', function($scope) {
+   $scope.title = 'I Love Manatees!!';
 });

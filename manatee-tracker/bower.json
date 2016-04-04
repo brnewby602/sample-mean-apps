@@ -1,7 +1,9 @@
 {
   "name": "manatee-tracker",
   "version": "0.0.1",
-  "authors": ["newby"],
+  "authors": [
+    "newby"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -11,7 +13,8 @@
   "dependencies": {
     "angular": "~1.3.16",
     "angular-route": "~1.3.16",
-    "angular-mocks": "~1.3.16", 
-    "angular-messages": "~1.3.16"
+    "angular-mocks": "~1.3.16",
+    "angular-messages": "~1.3.16",
+    "bootstrap": "^3.3.6"
   }
 }
