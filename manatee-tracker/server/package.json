@@ -3,6 +3,7 @@
   "description": "Restful API server for manatee tracking requests",
   "version": "0.0.1",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mongoose": "^4.4.11"
   }
 }
