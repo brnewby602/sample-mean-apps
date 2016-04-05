@@ -1,9 +1,9 @@
 var manateeData = [
   {
-    "name": "Neighbor of the Beast",
+    "name": "Tubs",
     "weight": 1200,
     "age": 53,
-    "disposition": "Homicidal Rage",
+    "disposition": "Blood thirsty",
     "imageURL": "https://christopherjgervais.files.wordpress.com/2016/01/368375.jpg?w=493&h=309"
   },
   {

@@ -1,8 +1,8 @@
 var Manatee = require('../models/Manatee.js');
 var data = require('../data/sampleManateeData.js');
 
-
 //
+
  var createAllFromData = function() {
 
   Manatee.remove({});
@@ -46,7 +46,7 @@ exports.retrieveOne = function(req, res) {
     if (err) {
       res.json(err);
     }
-  
+    console.log('matchingManatee = ' + matchingManatee);
     res.json(matchingManatee);
     
   });
