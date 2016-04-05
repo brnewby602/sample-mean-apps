@@ -1,10 +1,7 @@
-
-<div class="container">
-</div>
 <div class="container" ng-controller="ProfileController">
   <div class="row">
     <div class="col-sm-6">
-      {{title}}
+      <h1>{{title}}</h1>
       <table>
          <tr>
             <td>Name: </td>
@@ -20,9 +17,10 @@
          </tr>
          <tr>
             <td>Disposition: </td>
-            <td>{{manatee.dispostion}}</td>         
+            <td>{{manatee.disposition}}</td>         
          </tr>
       </table>
+      <img ng-src='{{manatee.imageUrl}}' />
     </div>
     <div class="col-sm-6">
       I'm google maps. Trust me I am.  If you don't see a map, it's like one of those paintings for the early 2000's that you had to squint really hard and blur your vision to see the picture.   By the beard of Zeus: Keep Squinting, you'll see it.

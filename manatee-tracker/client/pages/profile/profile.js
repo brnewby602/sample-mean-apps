@@ -3,7 +3,9 @@ angular.module('manatee.profile', [])
    
    $scope.manatee = ManateeServices.getCurrentManatee();
 
-   $scope.title = 'Profile';
+   console.log('current manatee: ' + JSON.stringify($scope.manatee));
+
+   $scope.title = $scope.manatee.name + '\'s Profile';
 
 
 });
