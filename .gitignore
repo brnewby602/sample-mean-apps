@@ -3,5 +3,5 @@
 .LSOverride
 
 */client/lib
-
 **/node_modules/**
+*/server/config
