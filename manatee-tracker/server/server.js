@@ -7,8 +7,7 @@ var manateeRouter = require('./routers/manateeRouter');
 
 // var router = express.Router();
 
-console.log('static files from: ' + __dirname + '/../client');
-app.use(express.static(__dirname + '/../client'))
+app.use(express.static(__dirname + '/../client'));
 
 /*
 app.get('/', function(req, res) {
@@ -17,6 +16,8 @@ app.get('/', function(req, res) {
 */
 
 // app.use('/', router);
+
+app.use('/api/manatees', manateeRouter);
 
 app.listen(8675, function() {
    console.log('I\'m Listening for manatee requests');
