@@ -14,3 +14,5 @@ var manateeData = [
     "imageURL": "https://christopherjgervais.files.wordpress.com/2016/01/368375.jpg?w=493&h=309"
   }
 ];
+
+module.exports = manateeData;
