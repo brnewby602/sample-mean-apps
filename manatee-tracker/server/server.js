@@ -9,6 +9,9 @@ var port = process.env.PORT || 8675;
 var dbUri = process.env.MONGOLAB_URI || 'mongodb://localhost/manatees';
 mongoose.connect(dbUri);
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/../client'));
 app.use('/api/manatees', manateeRouter);
