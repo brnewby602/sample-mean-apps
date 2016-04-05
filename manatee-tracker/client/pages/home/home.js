@@ -1,13 +1,12 @@
 angular.module('manatee.home', [])
-.controller('ManateeController', function($scope) {
+.controller('ManateeController', function($scope, ManateeServices) {
    $scope.title = 'I LOVE Manatees!!';
 
    $scope.manateeName = '';
 
 
    $scope.searchMyManatee = function() {
-      // ManateeServices.search()
-      console.log("BOOOO");
-      console.log('WOOT WOOT: ' + $scope.manateeName);
+      console.log('Inside searchMyManatee for: ' + $scope.manateeName);
+      ManateeServices.search($scope.manateeName);
    };
 });

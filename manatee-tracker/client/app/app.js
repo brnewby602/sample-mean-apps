@@ -1,4 +1,5 @@
 var app = angular.module('manateeTrackerApp', [
+  'manatee.services',
   'manatee.home',
   'ngRoute',
   'ngMessages'
