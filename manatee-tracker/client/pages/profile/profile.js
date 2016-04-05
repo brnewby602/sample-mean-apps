@@ -1,4 +1,4 @@
-angular.module('manatee.profile', [])
+angular.module('manatee.profile', ['geolocation'])
 .controller('ProfileController', function($scope, ManateeServices) {
    
    $scope.manatee = ManateeServices.getCurrentManatee();
