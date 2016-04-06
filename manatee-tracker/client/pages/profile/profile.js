@@ -10,16 +10,16 @@ angular.module('manatee.profile', ['uiGmapgoogle-maps'])
    $scope.title = $scope.manatee.name + '\'s Profile';
 
 
-    $scope.map = {center: {latitude: 40.1451, longitude: -99.6680 }, zoom: 4 };
-    $scope.map = {center: {latitude: 40.1451, longitude: -99.6680 }, zoom: 4 };
+    $scope.map = {center: {latitude: 25.165228, longitude: -80.492167 }, zoom: 9 };
+    $scope.map = {center: {latitude: 25.165228, longitude: -80.492167 }, zoom: 9 };
     $scope.options = {scrollwheel: false};
     $scope.coordsUpdates = 0;
     $scope.dynamicMoveCtr = 0;
     $scope.marker = {
       id: 0,
       coords: {
-        latitude: 40.1451,
-        longitude: -99.6680
+        latitude: 25.165228,
+        longitude: -80.492167
       },
       options: { draggable: true },
       events: {
