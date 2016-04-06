@@ -11,9 +11,11 @@ var data = require('../data/sampleManateeData.js');
     Manatee.create(manatee, function(err, newManatee) {
       if (err) {
         console.error('Error creating manatee: ' + manatee + ', error: ' + err);
+      } else {
+        
+        console.log('Created: ' + manatee);
       }
 
-      console.log('Created: ' + manatee);
     });
   });
 

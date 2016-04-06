@@ -27,9 +27,19 @@
       <img class='profile-picture' ng-src='{{manatee.imageUrl}}' />
     </div>
     <div class="col-sm-6">
-      <div id="map" class='map'><img src="/../../assets/manatee_map.png"></div>
+      <!-- <div id="map" class='map'><img src="/../../assets/manatee_map.png"></div> -->
 
       I'm google maps. Trust me I am.  If you don't see a map, it's like one of those paintings for the early 2000's that you had to squint really hard and blur your vision to see the picture.   By the beard of Zeus: Keep Squinting, you'll see it.
+        <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="true" options="options">
+        <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+        </ui-gmap-marker>
+        </ui-gmap-google-map>
+        <div ng-cloak>
+            <ul>
+                <li>coords update ctr: {{coordsUpdates}}</li>
+                <li>dynamic move ctr: {{dynamicMoveCtr}}</li>
+            </ul>
+        </div>
     </div>
   </div>
 </div>
