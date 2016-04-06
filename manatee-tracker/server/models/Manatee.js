@@ -24,7 +24,9 @@ var manateeSchema = Schema({
   age: Number,
   disposition: String,
   imageUrl: String,
-  favorite: String
+  favorite: String,
+  latitude: Number,
+  longitude: Number
 });
 
 var Manatee = mongoose.model('Manatee', manateeSchema) ;

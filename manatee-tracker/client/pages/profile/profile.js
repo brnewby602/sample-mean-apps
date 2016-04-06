@@ -3,23 +3,27 @@ angular.module('manatee.profile', ['uiGmapgoogle-maps'])
    
    $scope.manatee = ManateeServices.getCurrentManatee();
 
-   // $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
 
    console.log('current manatee: ' + JSON.stringify($scope.manatee));
 
    $scope.title = $scope.manatee.name + '\'s Profile';
 
+    var lat = $scope.manatee.latitude;
+    console.log('lat = ' + lat);
+    var long = $scope.manatee.longitude;
+    console.log('long = ' + long);
 
-    $scope.map = {center: {latitude: 25.165228, longitude: -80.492167 }, zoom: 9 };
-    $scope.map = {center: {latitude: 25.165228, longitude: -80.492167 }, zoom: 9 };
+
+    $scope.map = {center: {latitude: lat, longitude: long }, zoom: 9 };
+    $scope.map = {center: {latitude: lat, longitude: long }, zoom: 9 };
     $scope.options = {scrollwheel: false};
     $scope.coordsUpdates = 0;
     $scope.dynamicMoveCtr = 0;
     $scope.marker = {
       id: 0,
       coords: {
-        latitude: 25.165228,
-        longitude: -80.492167
+        latitude: lat,
+        longitude: long
       },
       options: { draggable: true },
       events: {
